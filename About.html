@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website/About</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&family=Oleo+Script&family=Oleo+Script+Swash+Caps&family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logo.png" alt="logo"></a>
+        <div class="nav-links" id="NavLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Course.html">Course</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+  <h1>About Us</h1>
+   </section>
+   <!-- ----about us content---- -->
+   <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are the world's largest university</h1>
+            <p>Oxford is a world-leading centre of learning, teaching and research and the oldest university in the English-speaking world. There are four academic divisions within Oxford University. All have a full-time divisional head and an elected divisional board. Also listed are the Department for Continuing Education, and the University's Gardens, Libraries and Museum</p>
+            <a href="" class="h-btn red-btn">EXPLORE NOW</a>
+        </div>
+        <div class="about-col">
+        <img src="About.jpg" alt="">
+    </div>
+</div>
+   </section>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quaerat laudantium quia tempora asperiores <br> vero nemo consequatur autem optio porro similique neque sunt!</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>Made with<i class="fa fa-heart-o"></i>by Ansa Khalid</p>
+    </div>
+</section>
+   <!-- JavaScript for Toggle Menu-->
+   <script>
+    var NavLinks=document.getElementById("NavLinks")
+    function showMenu(){
+        NavLinks.style.right="0";
+    }
+    function hideMenu(){
+        NavLinks.style.right="-400px";
+    }
+   </script>
+</body>
+</html>
